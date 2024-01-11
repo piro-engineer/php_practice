@@ -38,7 +38,7 @@ $todos = $todo->getAll();
       <li data-id="<?= Utils::h($todo->id); ?>">
         <input type="checkbox" <?= $todo->is_done ? 'checked' : ''; ?>>
         <span><?= Utils::h($todo->title); ?></span>
-        <span class="delete">×</span>
+        <span class="delete">delete</span>
       </li>
       <?php endforeach; ?>
     </ul>
